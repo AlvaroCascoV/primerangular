@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-forms-binding',
+  standalone: false,
+  templateUrl: './formsbinding.component.html',
+  //   styleUrls: ['./formsbinding.component.css'],
+})
+export class FormsBinding {
+  public user: any;
+  public mensaje: string;
+
+  constructor() {
+    this.mensaje = '';
+    this.user = {
+      nombre: '',
+      apellidos: '',
+      edad: 0,
+    };
+  }
+
+  recibirDatos(): void {
+    this.mensaje = 'Datos recibidos';
+  }
+}
