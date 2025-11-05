@@ -6,10 +6,17 @@ import { Component, OnInit, DoCheck } from '@angular/core';
   templateUrl: './hooksangular.component.html',
   styleUrls: ['./hooksangular.component.css'],
 })
-export class HooksAngular implements OnInit, DoCheck {
+export class HooksAngular implements OnInit {
+  public mensaje: string;
   constructor() {
     console.log('Constructor: Primer método de inicio de Component');
+    this.mensaje = 'Hoy es miercoles';
   }
+
+  cambiarMensaje(): void {
+    this.mensaje = 'y mañana juernes!!';
+  }
+
   ngOnInit(): void {
     console.log('Soy on init, despues de constructor ?');
   }
