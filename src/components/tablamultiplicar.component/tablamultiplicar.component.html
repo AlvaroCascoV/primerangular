@@ -1,0 +1,42 @@
+<div>
+  <h1>TABLA DE MULTI</h1>
+  <form #tablaForm="ngForm">
+    <label>Introduzca numero: </label>
+    <input #cajanumero name="cajanumero" type="number" />
+    <button (click)="mostrarTabla()">Tabla multiplicar</button>
+  </form>
+  @if (numeros.length>0) {
+  <table border="1" style="background-color: lightblue">
+    <thead>
+      @
+      <tr>
+        <th>Operacion</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (num of numeros;track num;let i = $index) {
+      <tr>
+        <td>{{ numero }} * {{ i + 1 }}</td>
+        <td>{{ num }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+  <table border="1" *ngIf="numeros.length > 0">
+    <thead>
+      ng
+      <tr>
+        <th>Operacion</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let num of numeros; let i = index">
+      <tr>
+        <td>{{ numero }} * {{ i + 1 }}</td>
+        <td>{{ num }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

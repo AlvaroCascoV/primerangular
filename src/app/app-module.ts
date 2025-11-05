@@ -12,6 +12,7 @@ import { SumarNumerosComponent } from '../components/sumarnumeros/sumarnumeros.c
 import { Prueba } from './components/prueba/prueba';
 import { Prueba2Component } from './components/prueba2.component/prueba2.component';
 import { TestComponent } from '../components/test.component/test.component';
+import { TablamultiplicarComponent } from '../components/tablamultiplicar.component/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TestComponent } from '../components/test.component/test.component';
     Prueba,
     Prueba2Component,
     TestComponent,
+    TablamultiplicarComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
