@@ -8,6 +8,10 @@ import { HooksAngular } from '../components/hooksangular/hooksangular.component'
 import { DeportesComponent } from '../components/deportes/deportes.component';
 import { Deportesv2Component } from '../components/deportesv2/deportesv2.component';
 import { FormsBinding } from '../components/formsbinding/formsbinding.component';
+import { SumarNumerosComponent } from '../components/sumarnumeros/sumarnumeros.component';
+import { Prueba } from './components/prueba/prueba';
+import { Prueba2Component } from './components/prueba2.component/prueba2.component';
+import { TestComponent } from '../components/test.component/test.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { FormsBinding } from '../components/formsbinding/formsbinding.component'
     DeportesComponent,
     Deportesv2Component,
     FormsBinding,
+    SumarNumerosComponent,
+    Prueba,
+    Prueba2Component,
+    TestComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

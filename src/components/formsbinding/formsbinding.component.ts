@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-forms-binding',
   standalone: false,
   templateUrl: './formsbinding.component.html',
-  //   styleUrls: ['./formsbinding.component.css'],
 })
 export class FormsBinding {
   public user: any;
